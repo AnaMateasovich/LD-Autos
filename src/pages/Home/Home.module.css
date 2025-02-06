@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 2rem;
+    gap: 2rem; 
+}
+
+.promo {
+    align-self: flex-end;
+    background-color: rgb(255, 123, 0);
+    padding: .7rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 12px 1px rgb(250, 137, 31);
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.iconsProducts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cardProducts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.titleCardProduct {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+}

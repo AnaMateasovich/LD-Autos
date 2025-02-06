@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+
+  z-index: 10;
+}
+
+.btnNavBar {
+  position: absolute;
+  top: 1.8rem;
+  left: 1.8rem;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  background-color: rgb(243, 243, 243);
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.navOpen {
+  transform: translateX(0);
+}
+.navOpen img {
+  margin: 1.8rem 0 0 1.8rem;
+}
+
+.nav li {
+  margin: 1.5rem 0 1.5rem 3rem;
+  padding: .8rem;
+}
+ 
+
+.btnWsp {
+  background-color: rgb(0, 189, 0);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.flexContainer p{
+    margin-top: 1rem;
+}
