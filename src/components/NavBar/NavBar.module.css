@@ -1,13 +1,12 @@
 .container {
   position: relative;
-
   z-index: 10;
 }
 
 .btnNavBar {
   position: absolute;
-  top: 1.8rem;
-  left: 1.8rem;
+  top: 1rem;
+  left: 1rem;
 }
 
 .nav {
@@ -16,7 +15,7 @@
   left: 0;
   width: 70%;
   height: 100%;
-  background-color: rgb(243, 243, 243);
+  background-color: #eaf3ff;
   transform: translateX(-100%);
   transition: all 0.3s ease;
 }
@@ -24,29 +23,53 @@
 .navOpen {
   transform: translateX(0);
 }
-.navOpen img {
-  margin: 1.8rem 0 0 1.8rem;
+
+.back {
+  margin: 1rem 0 0 1rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+
+.logo {
+  text-align: center;
+  margin: 0 2rem;
+  border-bottom: 1px solid #04436236;
+}
+
+.nav ul {
+  margin-top: 1rem;
 }
 
 .nav li {
-  margin: 1.5rem 0 1.5rem 3rem;
-  padding: .8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .8rem .8rem .8rem 3rem;
+}
+
+.navBarIcons {
+  color:  #044362;
 }
  
+.containerBtnWsp {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
 .btnWsp {
-  background-color: rgb(0, 189, 0);
+  font-size: 1.5rem;
+  background-color: rgb(0, 189, 0) !important;
+  width: 70%;
 }
 
-.flexContainer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  margin-top: 7rem;
-}
-
-.flexContainer p{
-    margin-top: 1rem;
+.copy {
+  position: fixed;
+  width: 100%;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }

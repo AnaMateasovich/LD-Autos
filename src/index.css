@@ -1,3 +1,11 @@
+:root {
+  --color-darkblue: #044362;
+  --color-darkblue-line: #04436236;
+  --color-blue: rgb(14, 58, 94);
+  --color-blue-transparent: rgba(14, 58, 94, 0.322);
+  --color-lightblue: #00b7ff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  background-color: #f8feff;
 }
 
 body {

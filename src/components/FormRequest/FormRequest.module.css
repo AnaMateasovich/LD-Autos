@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+    background-color: #044362;
+    color: white;
+    border-radius: 3rem;
+    padding: 3rem 3rem;
+    box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.767);
+}
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+.formTitle {
+    margin: 0 2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+    font-size: 2rem;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.formGroup label {
+    margin: .8rem 0 .5rem 0;
+}
+
+.formGroup input, textarea {
+    padding: .8rem 0 .5rem .8rem;
+    border: 1px solid rgba(70, 70, 70, 0.473);
+    border-radius: 1rem;
+    font-family: "Mulish", serif;
+}
+
+.formGroup {
+    height: auto;
+}
+
+.btnsForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+}
+
+.closeBtn {
+    background-color: rgba(255, 255, 255, 0.377);
+}

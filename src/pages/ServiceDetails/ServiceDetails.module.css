@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.back{
+  top: 2rem;
+  left: 2rem;
+  background-color: rgba(247, 255, 255, 0.425);
+}
+
+.imgService {
+  height: 39rem;
+  object-fit: cover;
+}
+
+.ServiceContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3rem 3rem 0 0;
+  margin-top: -3rem;
+  padding-bottom: 9rem;
+  background-color: #f4f9ff;
+  box-shadow: 0px 0px 7px 1px rgba(255, 255, 255, 0.425);
+
+}
+
+.ServiceTitle {
+  font-size: 2.7rem;
+  margin: .5rem 0 0 0;
+  color: rgb(14, 58, 94);
+}
+
+.ServiceText {
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.ServiceText p {
+  margin-bottom: 1.5rem;
+}
+
+.subCategorys h3{
+  margin: 1rem 2rem;
+}
+
+.note {
+  color: rgb(80, 80, 80);
+  font-size: 1.5rem;
+  margin: 1.8rem;
+}
+
+.pricing {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba( 0, 0, 0,0 );
+  backdrop-filter: blur(0px);
+  transition: background 0.5s ease, backdrop-filter 0.5s ease;
+  z-index: 10;
+  pointer-events: none;/* Evita que interfiera cuando está invisible */
+
+}
+
+.overlay.visible {
+  background: rgba( 0, 0, 0, .5);
+  backdrop-filter: blur(5px);
+  pointer-events: auto; /* Ahora sí captura eventos */
+}
+
+.form {
+  position: fixed;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all .5s ease;
+  z-index: 20;
+}
+
+.form.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.bgBlur {
+  filter: blur(0px);
+  transition: filter 0.5s ease;
+}
+
+.bgBlur.active {
+  filter: blur(5px);
+}

@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding: 2rem 2rem 1.5rem 2rem;
+  overflow: hidden;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.788);
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .5;
+  filter: blur(6px);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.advertisement {
+  width: 80%;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease;
+}
+
+.advertisement.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+.promoBtn {
+  margin-bottom: 2rem;
+  float: right;
+  background-color: #044362 !important;
+  box-shadow: 2px 1px 12px 1px rgb(14, 58, 94);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+.search {
+  margin-top: 1.5rem;
+}

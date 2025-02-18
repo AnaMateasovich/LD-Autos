@@ -1,16 +1,14 @@
 import React from "react";
 import styles from "./Welcome.module.css";
 import { Button } from "../../components/Button/Button";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.imgContainer}>
-          <img
-            src="/src/assets/welcome.jpg"
-            alt="Foto de LD Autos"
-          />
+          <img src="/src/assets/welcome.jpg" alt="Foto de LD Autos" />
         </div>
         <div className={styles.overlay}></div>
         <div className={styles.txt}>
@@ -18,12 +16,9 @@ const Welcome = () => {
             LD <span>Autos</span>
           </h1>
           <h2>Taller de Detailing, Chapería y Pintura</h2>
-          <Button
-            to={"/home"}
-            onClick="/home"
-            className={styles.btnW}
-            txt="Ver Sevicios"
-          />
+          <Link to="/home">
+            <Button className={styles.btnW} txt="Ver Sevicios" />
+          </Link>
         </div>
       </div>
     </>

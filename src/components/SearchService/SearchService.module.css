@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "l l l l l l"
+    "i i i i i b";
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1.5rem 0;
+}
+
+.label {
+  grid-area: l;
+  font-size: 1.5rem;
+}
+
+.input {
+  grid-area: i;
+  border: 1px solid #ccc;
+  border-radius: 3rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.151);
+}
+
+
+.searchBtn {
+  grid-area: b; 
+  padding: 1rem;
+  font-weight: 500;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.274);
+  background-color: var(--color-lightblue);
+  color: white;
+  border-radius: 2rem;
+  font-family: 'Mulish', serif;
+}

@@ -1,44 +1,45 @@
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 2rem;
-    gap: 2rem; 
+
+.iconsTitle {
+    margin-bottom: 1rem;
 }
 
-.promo {
-    align-self: flex-end;
-    background-color: rgb(255, 123, 0);
-    padding: .7rem 2rem;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 12px 1px rgb(250, 137, 31);
-    font-weight: 900;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: white;
-}
 
-.iconsProducts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.cardProducts {
+.cardServices {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0 2rem;
 }
 
 
-
-.titleCardProduct {
+.titleCardService {
     text-align: center;
     font-weight: bold;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin: 0 0 2rem 0;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+}
+
+.searching  {
+    margin: 1rem 1.5rem;
+}
+
+.searching h3 {
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--color-darkblue-line);
+}
+
+
+.clearSearch {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.btnClearSearch {
+    background-color: var(--color-darkblue);
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.15);
 }

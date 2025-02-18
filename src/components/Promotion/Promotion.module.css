@@ -1,0 +1,30 @@
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #044362;
+    color: white;
+    text-align: center;
+    border-radius: 3rem;
+    padding: 3rem 3rem;
+    box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.767);
+}
+
+.container h3 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.377);
+}
+
+.promoContent {
+    margin-top: 2rem;
+    font-size: 2.3rem;
+}
+
+.promoContent p {
+    font-size: 1.5rem;
+}
+
+.btnPromo {
+    margin-top: 2rem;
+}

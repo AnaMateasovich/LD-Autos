@@ -1,0 +1,52 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0 1rem;
+  font-size: 1.4rem;
+}
+
+.cardTxt {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 3rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color:rgb(238, 238, 238);
+  color: rgb(65, 65, 65);
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.103);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all .3s ease-in-out;
+}
+
+.cardTxt.active {
+  background-color: var(--color-blue);
+  color: rgb(233, 233, 233);
+}
+
+
+.cardTxt p {
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.infoIcon {
+  float: left;
+  margin: .3rem;
+}
+
+.infoText {
+  font-family: "Karla", serif;
+  color: var(--color-darkblue);
+  background-color: rgba(216, 224, 231, 0.836);
+  margin: 1rem 3rem 0 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+}

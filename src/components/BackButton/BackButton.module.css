@@ -1,0 +1,13 @@
+.back {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    color: #0000008f; 
+    text-align: center;
+    border-radius: 50%; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
