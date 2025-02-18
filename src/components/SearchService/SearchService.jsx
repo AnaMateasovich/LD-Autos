@@ -5,7 +5,6 @@ import { useSearchParams } from 'react-router-dom'
 
 export const SearchService = () => {
 
-
   const { searchTerm, setSearchTerm, handleSearch } = useServices();
   const 	[ searchParams, setSearchParams ] = useSearchParams()
 

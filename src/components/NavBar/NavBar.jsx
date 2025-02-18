@@ -57,7 +57,7 @@ export const NavBar = () => {
                 Reseñas
               </li>
             </Link>
-            <Link>
+            <Link to='https://www.instagram.com/ldautos.ok/'>
               <li>
                 <PhotoIcon className={styles.navBarIcons} />
                 Galeria de trabajos
