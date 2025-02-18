@@ -13,7 +13,7 @@ const Location = () => {
       </Link>
       <img
         className={styles.imgBg}
-        src="/src/assets/welcome.jpg"
+        src="/src/assets/location.jpg"
         alt="Ubicación LD Autos"
       />
       <iframe

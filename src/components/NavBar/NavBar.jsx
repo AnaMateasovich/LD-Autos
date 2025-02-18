@@ -51,7 +51,7 @@ export const NavBar = () => {
                 Ubicación
               </li>
             </Link>
-            <Link>
+            <Link to="/reviews">
               <li>
                 <StarIcon className={styles.navBarIcons} />
                 Reseñas
