@@ -73,11 +73,12 @@ export const FormRequest = ({ handleisVisibleForm }) => {
           ></textarea>
         </div>
         <div className={styles.btnsForm}>
-          <Button txt="Enviar" type="submit" />
+          <Button txt="Enviar" type="submit" aria-label='Enviar formulario'/>
           <Button
-            txt="Cerrar"
+            txt="Cerrar formulario"
             className={styles.closeBtn}
             onClick={handleisVisibleForm}
+            aria-label='Cerrar'
           />
         </div>
       </form>

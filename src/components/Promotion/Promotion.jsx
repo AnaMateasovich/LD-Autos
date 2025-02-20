@@ -11,7 +11,7 @@ export const Promotion = ({ onClick }) => {
           </h4>
           <p>Con todos los bancos</p>
         </div>
-        <Button txt="OK" className={styles.btnPromo} onClick={onClick} />
+        <Button txt="OK" className={styles.btnPromo} onClick={onClick} aria-label='Cerrar promoción'/>
       </div>
 
   );

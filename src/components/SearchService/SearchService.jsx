@@ -36,7 +36,7 @@ export const SearchService = () => {
         onChange={handleInputChange}
         value={searchTerm}
       />
-      <button className={styles.searchBtn} type="submit">Buscar</button>
+      <button className={styles.searchBtn} type="submit" aria-label='Buscar'>Buscar</button>
     </form>
   );
 };

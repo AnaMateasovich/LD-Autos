@@ -18,6 +18,7 @@ export const ServicePromoInfo = () => {
         className={`${styles.cardTxt} ${
           selected === "seguros" ? styles.active : ""
         }`}
+        aria-label='Información sobre seguros'
       >
         Seguros
       </button>
@@ -26,6 +27,8 @@ export const ServicePromoInfo = () => {
         className={`${styles.cardTxt} ${
           selected === "pagos" ? styles.active : ""
         }`}
+        aria-label='Información sobre pagos'
+
       >
         Pagos
       </button>
@@ -34,6 +37,8 @@ export const ServicePromoInfo = () => {
         className={`${styles.cardTxt} ${
           selected === "garantia" ? styles.active : ""
         }`}
+        aria-label='Información sobre garantía'
+
       >
         Garantía
       </button>

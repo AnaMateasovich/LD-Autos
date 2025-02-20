@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./ServiceDetails.module.css";
 import { Link, useParams } from "react-router-dom";
 import { BackButton } from "../../components/BackButton/BackButton";
 import { FormRequest } from "../../components/FormRequest/FormRequest";
@@ -6,7 +7,6 @@ import { Pricing } from "../../components/Pricing/Pricing";
 import { ServicePromoInfo } from "../../components/ServicePromoInfo/ServicePromoInfo";
 import { Subservices } from "../../components/Subservices/Subservices";
 import { useServices } from "../../hooks/useServices";
-import styles from "./ServiceDetails.module.css";
 
 const ServiceDetails = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -59,6 +59,7 @@ const ServiceDetails = () => {
           src={`http://localhost:3000${currentService.image}`}
           alt={currentService.name}
           className={styles.imgService}
+          
         />
         <div className={styles.ServiceContent}>
           <div className={styles.ServiceText}>

@@ -20,13 +20,13 @@ export const NavBar = () => {
 
   return (
     <header className={styles.container}>
-      <button className={styles.btnNavBar} onClick={handleIsOpen}>
+      <button className={styles.btnNavBar} onClick={handleIsOpen} aria-label={isOpen ? 'Cerrar barra de navegación' : 'Abrir barra de navegación'}> 
         {!isOpen && <MenuRoundedIcon style={{ fontSize: "4rem"}}/>}
       </button>
       <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}>
         
         <ArrowBackIosNewRoundedIcon onClick={handleIsOpen} className={styles.back} style={{ fontSize: "5rem", paddingLeft: "1rem" }}>
-          {isOpen && <img src="/src/assets/atras.png" alt="Cerrar menú" />}
+          {isOpen && <img src="/src/assets/atras.png" alt="Cerrar menú"/>}
         </ArrowBackIosNewRoundedIcon>
 
         <div className={styles.relative}>
@@ -65,7 +65,7 @@ export const NavBar = () => {
             </Link>
           </ul>
           <div className={styles.containerBtnWsp}>
-            <Button txt="Whats App" className={styles.btnWsp} onClick={() => window.open('https://wa.me/5493464589676?text=Hola%20quiero%20más%20información%20sobre%20sus%20servicios', '_blank')}/>
+            <Button txt="Whats App" className={styles.btnWsp} onClick={() => window.open('https://wa.me/5493464589676?text=Hola%20quiero%20más%20información%20sobre%20sus%20servicios', '_blank')} aria-label='Abrir Whats App'/>
           </div>
 
           <p className={styles.copy}>© Copyright 2025</p>

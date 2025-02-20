@@ -2,26 +2,32 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Route, Routes } from "react-router-dom";
 import { ServicesProvider } from "./context/ServicesProvider.jsx";
 import { SubServicesProvider } from "./context/SubServicesProvider.jsx";
-import Home from "./pages/Home/Home.jsx";
-import Location from "./pages/Location/Location.jsx";
-import ServiceDetails from "./pages/ServiceDetails/ServiceDetails.jsx";
-import Welcome from "./pages/Welcome/Welcome.jsx";
-import Reviews from "./pages/Reviews/Reviews.jsx";
+import { lazy, Suspense } from "react";
 
 const queryClient = new QueryClient();
+
+const Home = lazy(() => import("./pages/Home/Home.jsx"));
+const Location = lazy(() => import("./pages/Location/Location.jsx"));
+const ServiceDetails = lazy(() =>
+  import("./pages/ServiceDetails/ServiceDetails.jsx")
+);
+const Welcome = lazy(() => import("./pages/Welcome/Welcome.jsx"));
+const Reviews = lazy(() => import("./pages/Reviews/Reviews.jsx"));
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ServicesProvider>
         <SubServicesProvider>
-          <Routes>
-            <Route path="/" element={<Welcome />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/service/:id" element={<ServiceDetails />} />
-            <Route path="/location" element={<Location />} />
-            <Route path="/reviews" element={<Reviews />} />
-          </Routes>
+          <Suspense fallback={<div>Cargando...</div>}>
+            <Routes>
+              <Route path="/" element={<Welcome />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/service/:id" element={<ServiceDetails />} />
+              <Route path="/location" element={<Location />} />
+              <Route path="/reviews" element={<Reviews />} />
+            </Routes>
+          </Suspense>
         </SubServicesProvider>
       </ServicesProvider>
     </QueryClientProvider>
